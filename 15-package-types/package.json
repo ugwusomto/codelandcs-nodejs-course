@@ -1,0 +1,25 @@
+{
+  "name": "social-connect",
+  "version": "1.0.0",
+  "description": "a social media app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugwusomto/codelandcs-nodejs-course.git"
+  },
+  "author": "Somto Ugwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugwusomto/codelandcs-nodejs-course/issues"
+  },
+  "homepage": "https://github.com/ugwusomto/codelandcs-nodejs-course#readme",
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
