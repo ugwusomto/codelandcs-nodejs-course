@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Social</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color: #0c296b;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            vertical-align: center;
+        }
+
+        .profile {
+            width: 400px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            transition: all .5s;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .profile img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .btn{
+            display: block;
+            margin: 15px auto;
+            background-color: #0c296b;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 10px;
+            color: #fff;
+            transition: all .5s;
+        }
+
+        .btn:hover{
+            background-color: #fff;
+            padding: 10px;
+            border: 2px solid #0c296b;
+            color: #0c296b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0c296b;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Connect Social</h1>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="{% PROFILE_IMAGE %}" alt="{% PROFILE_NAME %}">
+            <h2>{% PROFILE_NAME %}</h2>
+            <p>{% PROFILE_OCCUPATION %}</p>
+            <p>Email: {% PROFILE_EMAIL %}</p>
+            <p>Bio: {% PROFILE_BIO %}</p>
+            <a class="btn" href="/profiles">Back</a>
+        </div>
+    
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Connect Social</p>
+    </footer>
+
+</body>
+
+</html>
